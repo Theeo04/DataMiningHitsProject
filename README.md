@@ -16,9 +16,14 @@ Analyze the structure of web networks using the **HITS (Hyperlink-Induced Topic 
 | Pajek/EPA | 4,772 | 8,965 | [SuiteSparse EPA](https://sparse.tamu.edu/Pajek/EPA) |
 | Pajek/California | 9,664 | 16,150 | [SuiteSparse California](https://sparse.tamu.edu/Pajek/California) |
 
-**Structure:** Directed graphs with nodes (web pages) and edges (hyperlinks).
+**Dataset Descriptions:**
 
-**Dataset Format:** Matrix Market (`.mtx`), convertible to an edge list. Each matrix entry `(i, j)` represents a directed hyperlink `i → j`.
+- **Pajek/EPA:** A hyperlink network of web pages linking to the US Environmental Protection Agency website (`www.epa.gov`), constructed by expanding an initial set of 200 search results.
+- **Pajek/California:** A hyperlink network generated from the search query "California", expanded from 200 initial search results to related web pages.
+
+**Structure:** Directed graphs where nodes represent web pages and edges represent hyperlinks.
+
+**Dataset Format:** Matrix Market (`.mtx`), convertible to an edge list containing source and target node IDs.
 
 ## 3. Implementation
 
